@@ -19,9 +19,9 @@ public class SynopsysCommandLineCal {
      *                 or "add(1, mult(2, 3))";
      * @return the final value of program
      */
-    public int accessStringData(String strInput){
+    public long accessStringData(String strInput){
         ArrayList<Object> arrayList = convertToPrefixSymbol(strInput);
-        int result;
+        long result;
         if(arrayList.get(0) == "let" && arrayList.get(2) == "let"){
             Logger.debug("", "Processing 'let'");
 
@@ -29,7 +29,7 @@ public class SynopsysCommandLineCal {
             int toIndex = 8;
             ArrayList<Object> tempArrList =  new ArrayList<>(arrayList.subList(fromIndex,toIndex));
             tempArrList = assignData(tempArrList);
-            int itemCalculated = calcPrefixExpr(tempArrList);
+            long itemCalculated = calcPrefixExpr(tempArrList);
 
             arrayList.subList(fromIndex,toIndex).clear();
             arrayList.add(fromIndex,itemCalculated);
@@ -112,17 +112,17 @@ public class SynopsysCommandLineCal {
      * @param arrayList is the object arraylist to calculate
      * @return the calculated expression
      */
-    public int calcPrefixExpr(ArrayList<Object> arrayList){
-        Stack <Integer> myStack = new Stack<>();
+    public long calcPrefixExpr(ArrayList<Object> arrayList){
+        Stack <Long> myStack = new Stack<>();
         for(int i = arrayList.size() - 1; i >= 0; i--){
             String item = String.valueOf(arrayList.get(i));
             Logger.debug("", "item: " + item);
             if(isInt(item)) {
-                myStack.push(Integer.parseInt(item) );
+                myStack.push(Long.parseLong(item));
             }
             else{
-                int operand1 = myStack.pop();
-                int operand2 = myStack.pop();
+                long operand1 = myStack.pop();
+                long operand2 = myStack.pop();
 
                 switch(item){
                     case "+":
@@ -168,7 +168,7 @@ public class SynopsysCommandLineCal {
                 int fromIndex = 2;
                 int toIndex   = 5;
                 ArrayList<Object> tempArrList = new ArrayList<>(arrayList.subList(fromIndex,toIndex));
-                int itemCalculated = calcPrefixExpr(tempArrList);
+                long itemCalculated = calcPrefixExpr(tempArrList);
                 arrayList = new ArrayList<> (arrayList.subList(5,arrayList.size()) );
                 arrayList = updateArrayList(arrayList, operand, itemCalculated);
             }

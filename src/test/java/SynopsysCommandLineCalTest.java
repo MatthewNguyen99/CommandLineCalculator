@@ -34,7 +34,7 @@ public class SynopsysCommandLineCalTest extends TestCase {
     public void testAccessStringData1() throws Exception {
         String strInput = "add(1, 2)";
         int expectedResult = 3;
-        int functionResult = instance.accessStringData(strInput);
+        long functionResult = instance.accessStringData(strInput);
 
         assertEquals(expectedResult,functionResult);      //pass
     }
@@ -45,7 +45,7 @@ public class SynopsysCommandLineCalTest extends TestCase {
     public void testAccessStringData2() throws Exception {
         String strInput = "add(1, mult(2, 3))";
         int expectedResult = 7;
-        int functionResult = instance.accessStringData(strInput);
+        long functionResult = instance.accessStringData(strInput);
 
         assertEquals(expectedResult,functionResult);      //pass
     }
@@ -56,7 +56,7 @@ public class SynopsysCommandLineCalTest extends TestCase {
     public void testAccessStringData3() throws Exception {
         String strInput = "mult(add(2, 2), div(9, 3))";
         int expectedResult = 12;
-        int functionResult = instance.accessStringData(strInput);
+        long functionResult = instance.accessStringData(strInput);
 
         assertEquals(expectedResult,functionResult);      //pass
     }
@@ -67,7 +67,7 @@ public class SynopsysCommandLineCalTest extends TestCase {
     public void testAccessStringData4() throws Exception {
         String strInput = "let(a, 5, add(a, a))";
         int expectedResult = 10;
-        int functionResult = instance.accessStringData(strInput);
+        long functionResult = instance.accessStringData(strInput);
 
         assertEquals(expectedResult,functionResult);      //pass
     }
@@ -78,7 +78,7 @@ public class SynopsysCommandLineCalTest extends TestCase {
     public void testAccessStringData5() throws Exception {
         String strInput = "let(a, 5, let(b, mult(a, 10), add(b, a)))";
         int expectedResult = 55;
-        int functionResult = instance.accessStringData(strInput);
+        long functionResult = instance.accessStringData(strInput);
 
         assertEquals(expectedResult,functionResult);      //pass
     }
@@ -89,7 +89,7 @@ public class SynopsysCommandLineCalTest extends TestCase {
     public void testAccessStringData6() throws Exception {
         String strInput = "let(a, let(b, 10, add(b, b)), let(b, 20, add(a, b))";
         int expectedResult = 40;
-        int functionResult = instance.accessStringData(strInput);
+        long functionResult = instance.accessStringData(strInput);
 
         assertEquals(expectedResult,functionResult);      //pass
     }
@@ -100,7 +100,7 @@ public class SynopsysCommandLineCalTest extends TestCase {
     public void testAccessStringData7() throws Exception {
         String strInput = "sub(mult(6,5),add(5,5))";
         int expectedResult = 20;
-        int functionResult = instance.accessStringData(strInput);
+        long functionResult = instance.accessStringData(strInput);
 
         assertEquals(expectedResult,functionResult);      //pass
     }
@@ -159,7 +159,7 @@ public class SynopsysCommandLineCalTest extends TestCase {
     public void testCalcPrefixExpr() throws Exception {
         ArrayList<Object> arrayListInput = new ArrayList<>(Arrays.asList("*", "+", "2", "2", "/", "9", "3") );
         int expectedResult = 12;
-        int functionResult = instance.calcPrefixExpr(arrayListInput);
+        long functionResult = instance.calcPrefixExpr(arrayListInput);
 
         assertEquals(expectedResult,functionResult);      //pass
     }
@@ -170,7 +170,7 @@ public class SynopsysCommandLineCalTest extends TestCase {
     public void testCalcPrefixExpr2() throws Exception {
         ArrayList<Object> arrayListInput = new ArrayList<>(Arrays.asList("+","1","*","2","3"));
         int expectedResult = 7;
-        int functionResult = instance.calcPrefixExpr(arrayListInput);
+        long functionResult = instance.calcPrefixExpr(arrayListInput);
 
         assertEquals(expectedResult,functionResult);     // pass
     }
