@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="SynopsysCommandLineCalTest" tests="17" skipped="0" failures="0" errors="0" timestamp="2018-07-03T05:23:16" hostname="Matthews-iMac.local" time="0.033">
+  <properties/>
+  <testcase name="testCalcPrefixExpr2" classname="SynopsysCommandLineCalTest" time="0.005"/>
+  <testcase name="testIsInt" classname="SynopsysCommandLineCalTest" time="0.0"/>
+  <testcase name="testAccessStringData1" classname="SynopsysCommandLineCalTest" time="0.003"/>
+  <testcase name="testAccessStringData2" classname="SynopsysCommandLineCalTest" time="0.003"/>
+  <testcase name="testAccessStringData3" classname="SynopsysCommandLineCalTest" time="0.004"/>
+  <testcase name="testAccessStringData4" classname="SynopsysCommandLineCalTest" time="0.002"/>
+  <testcase name="testAccessStringData5" classname="SynopsysCommandLineCalTest" time="0.004"/>
+  <testcase name="testAccessStringData6" classname="SynopsysCommandLineCalTest" time="0.004"/>
+  <testcase name="testUpdateArrayList" classname="SynopsysCommandLineCalTest" time="0.0"/>
+  <testcase name="testConvertToPrefixSymbol" classname="SynopsysCommandLineCalTest" time="0.001"/>
+  <testcase name="testAssignData" classname="SynopsysCommandLineCalTest" time="0.0"/>
+  <testcase name="testInvalidVerbosity" classname="SynopsysCommandLineCalTest" time="0.001"/>
+  <testcase name="testAssignData2" classname="SynopsysCommandLineCalTest" time="0.0"/>
+  <testcase name="testIsInt2" classname="SynopsysCommandLineCalTest" time="0.0"/>
+  <testcase name="testIsInt3" classname="SynopsysCommandLineCalTest" time="0.0"/>
+  <testcase name="testCalcPrefixExpr" classname="SynopsysCommandLineCalTest" time="0.001"/>
+  <testcase name="testConvertToPrefixSymbol2" classname="SynopsysCommandLineCalTest" time="0.0"/>
+  <system-out><![CDATA[[DEBUG]item:  3
+[DEBUG]item:  2
+[DEBUG]item:  *
+[DEBUG]item:  1
+[DEBUG]item:  +
+[DEBUG]: Processing add
+[DEBUG]: Processing 1
+[DEBUG]: Processing 2
+[DEBUG]: Processing add
+[DEBUG]: Processing 1
+[DEBUG]: Processing 2
+[DEBUG]item:  2
+[DEBUG]item:  1
+[DEBUG]item:  +
+[INFO]Output: 3
+[DEBUG]: Processing add
+[DEBUG]: Processing 1
+[DEBUG]: Processing mult
+[DEBUG]: Processing 2
+[DEBUG]: Processing 3
+[DEBUG]: Processing add
+[DEBUG]: Processing 1
+[DEBUG]: Processing mult
+[DEBUG]: Processing 2
+[DEBUG]: Processing 3
+[DEBUG]item:  3
+[DEBUG]item:  2
+[DEBUG]item:  *
+[DEBUG]item:  1
+[DEBUG]item:  +
+[INFO]Output: 7
+[DEBUG]: Processing mult
+[DEBUG]: Processing add
+[DEBUG]: Processing 2
+[DEBUG]: Processing 2
+[DEBUG]: Processing div
+[DEBUG]: Processing 9
+[DEBUG]: Processing 3
+[DEBUG]: Processing mult
+[DEBUG]: Processing add
+[DEBUG]: Processing 2
+[DEBUG]: Processing 2
+[DEBUG]: Processing div
+[DEBUG]: Processing 9
+[DEBUG]: Processing 3
+[DEBUG]item:  3
+[DEBUG]item:  9
+[DEBUG]item:  /
+[DEBUG]item:  2
+[DEBUG]item:  2
+[DEBUG]item:  +
+[DEBUG]item:  *
+[INFO]Output: 12
+[DEBUG]: Processing let
+[DEBUG]: Processing a
+[DEBUG]: Processing 5
+[DEBUG]: Processing add
+[DEBUG]: Processing a
+[DEBUG]: Processing a
+[DEBUG]item:  5
+[DEBUG]item:  5
+[DEBUG]item:  +
+[INFO]Output: 10
+[DEBUG]: Processing let
+[DEBUG]: Processing a
+[DEBUG]: Processing 5
+[DEBUG]: Processing let
+[DEBUG]: Processing b
+[DEBUG]: Processing mult
+[DEBUG]: Processing a
+[DEBUG]: Processing 10
+[DEBUG]: Processing add
+[DEBUG]: Processing b
+[DEBUG]: Processing a
+[DEBUG]item:  10
+[DEBUG]item:  5
+[DEBUG]item:  *
+[DEBUG]item:  5
+[DEBUG]item:  50
+[DEBUG]item:  +
+[INFO]Output: 55
+[DEBUG]: Processing let
+[DEBUG]: Processing a
+[DEBUG]: Processing let
+[DEBUG]: Processing b
+[DEBUG]: Processing 10
+[DEBUG]: Processing add
+[DEBUG]: Processing b
+[DEBUG]: Processing b
+[DEBUG]: Processing let
+[DEBUG]: Processing b
+[DEBUG]: Processing 20
+[DEBUG]: Processing add
+[DEBUG]: Processing a
+[DEBUG]: Processing b
+[DEBUG]Access: Processing 'let'
+[DEBUG]item:  10
+[DEBUG]item:  10
+[DEBUG]item:  +
+[DEBUG]item:  20
+[DEBUG]item:  20
+[DEBUG]item:  +
+[INFO]Output: 40
+[DEBUG]: Processing mult
+[DEBUG]: Processing add
+[DEBUG]: Processing 2
+[DEBUG]: Processing 2
+[DEBUG]: Processing div
+[DEBUG]: Processing 9
+[DEBUG]: Processing 3
+[ERROR]Argument: Unknown verbosity: abc
+[DEBUG]item:  3
+[DEBUG]item:  9
+[DEBUG]item:  /
+[DEBUG]item:  2
+[DEBUG]item:  2
+[DEBUG]item:  +
+[DEBUG]item:  *
+[DEBUG]: Processing add
+[DEBUG]: Processing 1
+[DEBUG]: Processing mult
+[DEBUG]: Processing 2
+[DEBUG]: Processing 3
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

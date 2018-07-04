@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/SynopsysCalculator.iml" filepath="$PROJECT_DIR$/SynopsysCalculator.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/SynopsysCalculator_main.iml" filepath="$PROJECT_DIR$/.idea/modules/SynopsysCalculator_main.iml" group="SynopsysCalculator" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/SynopsysCalculator_test.iml" filepath="$PROJECT_DIR$/.idea/modules/SynopsysCalculator_test.iml" group="SynopsysCalculator" />
+    </modules>
+  </component>
+</project>

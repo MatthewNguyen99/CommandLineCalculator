@@ -1,0 +1,123 @@
+[DEBUG]item:  3
+[DEBUG]item:  2
+[DEBUG]item:  *
+[DEBUG]item:  1
+[DEBUG]item:  +
+[DEBUG]: Processing add
+[DEBUG]: Processing 1
+[DEBUG]: Processing 2
+[DEBUG]: Processing add
+[DEBUG]: Processing 1
+[DEBUG]: Processing 2
+[DEBUG]item:  2
+[DEBUG]item:  1
+[DEBUG]item:  +
+[INFO]Output: 3
+[DEBUG]: Processing add
+[DEBUG]: Processing 1
+[DEBUG]: Processing mult
+[DEBUG]: Processing 2
+[DEBUG]: Processing 3
+[DEBUG]: Processing add
+[DEBUG]: Processing 1
+[DEBUG]: Processing mult
+[DEBUG]: Processing 2
+[DEBUG]: Processing 3
+[DEBUG]item:  3
+[DEBUG]item:  2
+[DEBUG]item:  *
+[DEBUG]item:  1
+[DEBUG]item:  +
+[INFO]Output: 7
+[DEBUG]: Processing mult
+[DEBUG]: Processing add
+[DEBUG]: Processing 2
+[DEBUG]: Processing 2
+[DEBUG]: Processing div
+[DEBUG]: Processing 9
+[DEBUG]: Processing 3
+[DEBUG]: Processing mult
+[DEBUG]: Processing add
+[DEBUG]: Processing 2
+[DEBUG]: Processing 2
+[DEBUG]: Processing div
+[DEBUG]: Processing 9
+[DEBUG]: Processing 3
+[DEBUG]item:  3
+[DEBUG]item:  9
+[DEBUG]item:  /
+[DEBUG]item:  2
+[DEBUG]item:  2
+[DEBUG]item:  +
+[DEBUG]item:  *
+[INFO]Output: 12
+[DEBUG]: Processing let
+[DEBUG]: Processing a
+[DEBUG]: Processing 5
+[DEBUG]: Processing add
+[DEBUG]: Processing a
+[DEBUG]: Processing a
+[DEBUG]item:  5
+[DEBUG]item:  5
+[DEBUG]item:  +
+[INFO]Output: 10
+[DEBUG]: Processing let
+[DEBUG]: Processing a
+[DEBUG]: Processing 5
+[DEBUG]: Processing let
+[DEBUG]: Processing b
+[DEBUG]: Processing mult
+[DEBUG]: Processing a
+[DEBUG]: Processing 10
+[DEBUG]: Processing add
+[DEBUG]: Processing b
+[DEBUG]: Processing a
+[DEBUG]item:  10
+[DEBUG]item:  5
+[DEBUG]item:  *
+[DEBUG]item:  5
+[DEBUG]item:  50
+[DEBUG]item:  +
+[INFO]Output: 55
+	[DEBUG]: Processing let
+	[DEBUG]: Processing a
+	[DEBUG]: Processing let
+	[DEBUG]: Processing b
+	[DEBUG]: Processing 10
+	[DEBUG]: Processing add
+	[DEBUG]: Processing b
+	[DEBUG]: Processing b
+	[DEBUG]: Processing let
+	[DEBUG]: Processing b
+	[DEBUG]: Processing 20
+	[DEBUG]: Processing add
+	[DEBUG]: Processing a
+	[DEBUG]: Processing b
+	 [DEBUG]Access: Processing 'let'
+	[DEBUG]item:  10
+	[DEBUG]item:  10
+	[DEBUG]item:  +
+	[DEBUG]item:  20
+	[DEBUG]item:  20
+	[DEBUG]item:  +
+	[INFO]Output: 40
+[DEBUG]: Processing mult
+[DEBUG]: Processing add
+[DEBUG]: Processing 2
+[DEBUG]: Processing 2
+[DEBUG]: Processing div
+[DEBUG]: Processing 9
+[DEBUG]: Processing 3
+([ERROR]Argument: Unknown verbosity: abc
+[DEBUG]item:  3
+[DEBUG]item:  9
+[DEBUG]item:  /
+[DEBUG]item:  2
+[DEBUG]item:  2
+[DEBUG]item:  +
+[DEBUG]item:  *
+[DEBUG]: Processing add
+[DEBUG]: Processing 1
+[DEBUG]: Processing mult
+[DEBUG]: Processing 2
+[DEBUG]: Processing 3
