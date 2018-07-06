@@ -135,6 +135,10 @@ public class SynopsysCommandLineCal {
                         myStack.push(operand1 * operand2);
                         break;
                     case "/":
+                        if(operand2 == 0){
+                            Logger.error("","Cannot divide by zero");
+                            throw new IllegalArgumentException();
+                        }
                         myStack.push(operand1 / operand2);
                         break;
                 }
