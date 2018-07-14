@@ -106,10 +106,10 @@ public ArrayList<Object> convertToPrefixSymbol(String strInput)
     * convert string to prefix-Expressions
     * "add"   = "+"
     * "sub"   = "-"
-    * "mult" = "*"
-    * "div"    = "/"
+    * "mult"  = "*"
+    * "div"   = "/"
     * example:
-    *         string input:   "mult(add(2, 2), div(9, 3))"  
+    *          string input:   "mult(add(2, 2), div(9, 3))"  
     *          becomes arraylist: [*, +, 2, 2, /, 9, 3]
     * example:
     *          string input:   "let(a, 5, add(a, a))"        
